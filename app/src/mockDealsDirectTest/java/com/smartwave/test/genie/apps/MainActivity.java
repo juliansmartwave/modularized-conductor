@@ -46,18 +46,22 @@ public class MainActivity extends BaseActivity {
 //                .addRouteFrom(GateKeeper.Destination.CHECKOUT)
 //                .build();
 
+        //create route origins for main
         mMainRouteOrigins = new GateKeeper.RouteBuilder()
                 .addRouteFrom(GateKeeper.Destination.LOGIN)
                 .build();
 
+        //create route origins for login
         mLoginRouteOrigins = new GateKeeper.RouteBuilder()
                 .addRouteFrom(GateKeeper.Destination.DETAILS)
                 .build();
 
+        //register them
         GateKeeper.registerRoute(GateKeeper.Destination.LOGIN, mLoginRouteOrigins);
         GateKeeper.registerRoute(GateKeeper.Destination.MAIN, mMainRouteOrigins);
 
         //call to update CURRENT_LOCATION too
+        //pag di mo pinadaan sa gatekeeper baka makalimutan ng developer to set CURRENT_LOCATION.
         GateKeeper.setRoot(mRouter,GateKeeper.Destination.DETAILS,
                 RouterTransaction.with(ControllerFactory.getInstance(GateKeeper.Destination.DETAILS)));
 
