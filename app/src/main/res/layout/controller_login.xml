@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:ignore="MissingPrefix">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo_colored"/>
+
+    <TextView
+        fontPath="@string/font_app_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textColor="@color/dark_text"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fragment_login_layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/DefaultEditTextStyle"
+            fontPath="@string/font_app_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        fontPath="@string/font_app_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Password"
+        android:textColor="@color/dark_text"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fragment_login_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/ic_show_password_toggle" >
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/DefaultEditTextStyle"
+            fontPath="@string/font_app_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/DefaultButtonStyle"
+        fontPath="@string/font_app_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textSize="@dimen/text_size_xlarge"/>
+
+</LinearLayout>
+
+</RelativeLayout>
+

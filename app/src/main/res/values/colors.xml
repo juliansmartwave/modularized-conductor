@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="dark_text">#99000000</color>
+
+    <!-- Button Theme -->
+    <color name="bg_button_ripple">#DBE1EA</color>
+    <color name="bg_button_default">#F00065</color>
+    <color name="bg_button_pressed">#FFB9004E</color>
+
+    <!-- EditText Theme -->
+    <color name="bg_edit_text_ripple">#FFFFFF</color>
+    <color name="bg_edit_text_default">#ECECEC</color>
+    <color name="bg_edit_text_focused">#009BEC</color>
+
+    <color name="gray_title_text">#959595</color>
+    <color name="gray_field_text">#868686</color>
+    <color name="gray_field_label">#87939D</color>
+    <color name="gray_active_field_text">#616161</color>
+    <color name="gray_inactive_field_text">#D0D0D0</color>
+
+    <color name="tab_bar_background">#e7e7e7</color>
+    <color name="tab_bar_icon_inactive">#87939D</color>
+    <color name="tab_bar_icon_active">#F00065</color>
+    <color name="tab_bar_icon_hovered">#F00065</color>
+</resources>
